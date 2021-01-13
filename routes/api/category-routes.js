@@ -67,20 +67,20 @@ router.put("/:id", (req, res) => {
       category_name: req.body.category_name,
     },
     {
-      where: req.params.id,
+      where: { id: req.params.id },
     }
   )
-  .then((dbCategoryData) => {
-    if (!dbCategoryData) {
-      res.status(404).json({ message: "No Category found with this id" });
-      return;
-    }
-    res.json(dbCategoryData);
-  })
-  .catch((err) => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+    .then((dbCategoryData) => {
+      if (!dbCategoryData) {
+        res.status(404).json({ message: "No Category found with this id" });
+        return;
+      }
+      res.json(dbCategoryData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.delete("/:id", (req, res) => {
