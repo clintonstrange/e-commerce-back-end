@@ -39,7 +39,7 @@ This application tracks products of an e-commerce retailer by allowing you to vi
 
   To begin using the application, ensure you have created your database in MySQL and installed your schema.sql file. Then from the command line run "npm run seed" to seed your schema and database with current categories, products and tags. Then ensure your server is on by running "npm start" from the command line. Lastly switch to Insomnia Core to test your GET, POST, PUT and DELETE routes for categories, products, and tags.
 
-  [See Walkthrough Video Here]()
+  [See Walkthrough Video Here](https://drive.google.com/file/d/1iNexNSL0ZTCa5LR_r8gMWa9FSEIe6tOu/view)
 
   ## Questions
 
